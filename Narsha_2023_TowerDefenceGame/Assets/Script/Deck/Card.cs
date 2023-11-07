@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Card : MonoBehaviour
 {
@@ -16,6 +17,10 @@ public class Card : MonoBehaviour
     private float maxHp;
     private float fireTime;
     private Vector2 fireRange;
+    private Vector2 noneDrag;
+
+
+    public List<GameObject> cardObject;
 
     private float MaxHp
     {
@@ -63,19 +68,9 @@ public class Card : MonoBehaviour
 
     private void Start()
     {
-        cardInfo.cardDmg = DeckManager.Instance.deckList[childIndex].cardDamage;
-        cardInfo.cardSprite = DeckManager.Instance.deckList[childIndex].cardSprite;
-        cardInfo.cardNametxt = DeckManager.Instance.deckList[childIndex].cardName;
-        cardInfo.cardInfo = DeckManager.Instance.deckList[childIndex].cardDescription;
-        cardInfo.maxHp = DeckManager.Instance.deckList[childIndex].cardHp;
-        cardInfo.fireTime = DeckManager.Instance.deckList[childIndex].fireTime;
-        cardInfo.fireRange = DeckManager.Instance.deckList[childIndex ].fireRange;
+        noneDrag = this.transform.position;
     }
 
-    private void Update()
-    {
-        
-    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -98,13 +93,21 @@ public class Card : MonoBehaviour
                 slotDeck.cardIndex = cardInfo.cardIndex;
                 slotDeck.cardHp = cardInfo.maxHp;
                 slotDeck.fireRange = cardInfo.fireRange;
-                slotDeck.fireTime= cardInfo.fireTime;
+                slotDeck.fireTime = cardInfo.fireTime;
                 Debug.Log("Card information transferred to the deck.");
             }
             childIndex = collision.gameObject.transform.GetSiblingIndex();
             DeckManager.Instance.deckList[childIndex] = slotDeck;
             DeckManager.Instance.SaveCardData(slotDeck, childIndex);
+        }
+        else
+        {
+            gameObject.transform.position = noneDrag;
+        }
 
+        if (collision.gameObject.CompareTag("DropArea"))
+        {
+            cardObject[childIndex].SetActive(false);
         }
     }
 }
