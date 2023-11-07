@@ -9,6 +9,8 @@ public class DeckManager : MonoBehaviour
     public Deck[] deckList;
     public Card card;
     public Cards cards;
+    public Cards[] cardList;
+    public Player[] userCardList;
 
     //ethan
     public GameObject cardObj;
@@ -32,6 +34,7 @@ public class DeckManager : MonoBehaviour
     private void Start()
     {
         deckList = new Deck[5];
+        cardList = new Cards[5];
 
         Deck[] decks = new Deck[5];
         for (int i = 0; i < 5; i++)
@@ -58,10 +61,10 @@ public class DeckManager : MonoBehaviour
         {
             if (deckList[i] == null)
             {
-                
-                    deckList[i] = null;
-                    deckList[i] = cardObj.transform.GetChild(i).GetComponent<Deck>();
-
+                cardList[i] = null;
+                cardList[i] = cardObj.transform.GetChild(i).GetComponent<Cards>();
+                deckList[i] = null;
+                deckList[i] = cardObj.transform.GetChild(i).GetComponent<Deck>();
             }
             deckList[i].cardName = cardData[i].cardName;
             deckList[i].cardDamage = cardData[i].cardDamage;
@@ -70,7 +73,18 @@ public class DeckManager : MonoBehaviour
             deckList[i].cardIndex = cardData[i].cardIndex;
             deckList[i].cardHp = cardData[i].maxHp;
             deckList[i].fireRange = cardData[i].fireRanage;
+            deckList[i].fireTime = cardData[i].fireTime;
 
+            cardList[i].cardNametxt = deckList[i].cardName;
+            cardList[i].maxHp = deckList[i].cardHp;
+            cardList[i].cardDmg = deckList[i].cardDamage;
+            cardList[i].cardInfo = deckList[i].cardDescription;
+            cardList[i].cardSprite = deckList[i].cardSprite;
+
+            userCardList[i].Deamge = deckList[i].cardDamage;
+            userCardList[i].FireTime = deckList[i].fireTime;
+            userCardList[i].MaxHp = deckList[i].cardHp;
+            userCardList[i].FireRange = deckList[i].fireRange;
         }
     }
 

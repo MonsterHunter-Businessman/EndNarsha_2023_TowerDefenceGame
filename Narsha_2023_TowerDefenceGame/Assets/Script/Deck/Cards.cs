@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEditor.Animations;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 //개선사항이 많이 필요
 public enum TowerCards
@@ -41,8 +42,8 @@ public class Cards : MonoBehaviour
         mercenaryType();
         cardname.text = cardNametxt;
         cardDescriptionTxt.text = cardInfo;
-
-        
+        cardImage.GetComponent<Image>().sprite = Resources.Load<Sprite>(cardSprite);
+       
         /*cardNametxt = DeckManager.Instance.deckList[1].cardName;
         cardDmg = DeckManager.Instance.deckList[1].cardDamage;
         cardInfo = DeckManager.Instance.deckList[1].cardDescription;
@@ -91,44 +92,40 @@ public class Cards : MonoBehaviour
                 cardNametxt = "사제";
                 cardInfo = " 10초마다 아군의 체력을 5회복 합니다.적을 단일 공격합니다.";
                 cardSprite = "Img/Ch/Player/nun";
-                cardImage.GetComponent<Image>().sprite = Resources.Load<Sprite>(cardSprite);
                 cardDmg = 7;
                 break;
             case TowerCards.assassin:
                 cardNametxt = "암살자";
                 cardInfo = " 상대에게 공격을 받지 않습니다.적을 단일 공격합니다";
                 cardSprite = "Img/Ch/Player/assassin";
-                cardImage.GetComponent<Image>().sprite = Resources.Load<Sprite>(cardSprite);
                 cardDmg = 15;
                 break;
             case TowerCards.spear:
                 cardNametxt = "창병";
                 cardInfo = "상대의 어그로를 우선으로 먹습니다.적을 단일 공격합니다.";
                 cardSprite = "Img/Ch/Player/spear";
-                cardImage.GetComponent<Image>().sprite = Resources.Load<Sprite>(cardSprite);
                 cardDmg = 10;
                 break;
             case TowerCards.berserker:
                 cardNametxt = "광전사";
                 cardInfo = "상대의 어그로를 우선으로 먹습니다.적을 단일 공격합니다.";
                 cardSprite = "Img/Ch/Player/berserker";
-                cardImage.GetComponent<Image>().sprite = Resources.Load<Sprite>(cardSprite);
                 cardDmg = 20;
                 break;
             case TowerCards.darkmagician:
                 cardNametxt = "흑마법사";
                 cardInfo = "공격한 칸 4칸내에 있는 적에게 광역 피해를 입힙니다.";
                 cardSprite = "Img/Ch/Player/darkmagician";
-                cardImage.GetComponent <Image>().sprite = Resources.Load<Sprite>(cardSprite);
                 cardDmg = 20;
                 break;
             case TowerCards.knight:
                 cardNametxt = "기사";
                 cardInfo = "세상 평범한 기사입니다. 적을 단일 공격합니다.";
-                cardSprite = "Img/Ch/Player/Knight.png";
-                animPath = "Animations/Control/MainCharacter.controller";
-                cardImage.GetComponent<Image>().sprite = Resources.Load<Sprite>(cardSprite);
-                cardAnim.GetComponent<Animator>().runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>(animPath);
+                cardSprite = "Img/Ch/Player/Knight";
+                animPath = "Animations/Control/MainCharacter";
+                maxHp = 100;
+                fireRange = new Vector3(2,2,2);
+                fireTime = 2;
                 cardDmg = 10;
                 break;
             case TowerCards.wizzard:
