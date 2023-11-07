@@ -11,19 +11,15 @@ public class SoundEffect : MonoBehaviour
 
     public AudioClip run;
     
-    void WalkSound()
-    {
-        if (run != null)
-        {
+    void WalkSound() {
+        if (run != null) {
             sound.clip = run;
             sound.Play();
         }
     }
     
-    void AttackSound()
-    {
-        if (attack != null)
-        {
+    void AttackSound() {
+        if (attack != null) {
             sound.clip = attack;
             sound.Play();
         }

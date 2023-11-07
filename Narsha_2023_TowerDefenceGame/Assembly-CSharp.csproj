@@ -81,6 +81,7 @@
      <Compile Include="Assets\Script\Camera\CameraManager.cs" />
      <Compile Include="Assets\Script\InGame\PlayerSc\Wizard.cs" />
      <Compile Include="Assets\Script\Deck\Cards.cs" />
+     <Compile Include="Assets\Script\InGame\PlayerSc\spearMan.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Resources\Prefab" />
      <Folder Include="Assets\Assets\Isometric Tower Defense Pack\Sprites\Landscape tiles" />
