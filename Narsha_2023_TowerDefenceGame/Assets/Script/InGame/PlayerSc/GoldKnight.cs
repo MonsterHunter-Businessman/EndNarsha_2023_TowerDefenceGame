@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class spearMan : Player
+public class GoldKnight : Player
 {
     public GameObject partical;
     

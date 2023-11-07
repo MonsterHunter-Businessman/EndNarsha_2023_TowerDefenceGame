@@ -49,6 +49,8 @@ public abstract class Player : MonoBehaviour
     public Slider slider;
     public GameObject clone;
 
+    public string playerName;
+
     
 
     private void Start()
@@ -128,10 +130,12 @@ public abstract class Player : MonoBehaviour
     {
 
         Draw = true;
+        if (playerName == "Player")
+        {
+            boxCollider2D.offset = new Vector2(2.5f, 0f);
 
-        boxCollider2D.offset = new Vector2(2.5f, 0f);
-
-        boxCollider2D.size = new Vector2(5f, 5f);
+            boxCollider2D.size = new Vector2(5f, 5f);
+        }
 
         gameObject.transform.position = new Vector2(mPosition.x, mPosition.y);
     }
@@ -140,10 +144,13 @@ public abstract class Player : MonoBehaviour
     {
 
         //Draw = false;
+        
+        if (playerName == "Player")
+        {
+            boxCollider2D.offset = new Vector2(2.5f, 0f);
 
-        boxCollider2D.offset = new Vector2(2.5f, 0f);
-
-        boxCollider2D.size = new Vector2(5f, 8f);
+            boxCollider2D.size = new Vector2(5f, 8f);
+        }
 
         transform.position = targetPostion;
 
