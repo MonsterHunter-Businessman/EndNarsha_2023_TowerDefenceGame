@@ -472,9 +472,9 @@ MonoBehaviour:
   animator: {fileID: 0}
   MonsterType: 2
   Speed: 10
-  MaxHp: 30
+  MaxHp: 150
   FireTime: 3
-  Deamge: 15
+  Deamge: 20
   FireRange: {x: 3, y: 3, z: 3}
   HpBar: {fileID: 8393150499848936678, guid: bd92c6cb8e5672943ad51508182efd88, type: 3}
   slider: {fileID: 0}
