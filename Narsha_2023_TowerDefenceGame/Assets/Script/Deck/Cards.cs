@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.Animations;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
@@ -16,6 +15,7 @@ public enum TowerCards
     berserker,
     darkmagician,
     knight,
+    holyKnight,
     wizzard,
     archer
 }
@@ -36,13 +36,33 @@ public class Cards : MonoBehaviour
     public Vector3 fireRange;
     public Animator cardAnim;
     public string animPath;
+    public string chName;
+
+    // GoldKnight
+    // Player
     
     void Update()
     {    
         mercenaryType();
         cardname.text = cardNametxt;
+        if (SceneManager.GetActiveScene().name == "OneStage" || SceneManager.GetActiveScene().name == "TwoStage" || SceneManager.GetActiveScene().name == "ThreeStage" || SceneManager.GetActiveScene().name == "FourStage" || SceneManager.GetActiveScene().name == "FiveStage")
+        {
+            cardname.transform.position = Camera.main.WorldToScreenPoint(transform.position + new Vector3(0, -0.28f, 0f));
+        }
+        else
+        {
+            cardname.transform.position = Camera.main.WorldToScreenPoint(transform.position + new Vector3(-0, -0.38f, 0f));
+        }
         cardDescriptionTxt.text = cardInfo;
-        cardImage.GetComponent<Image>().sprite = Resources.Load<Sprite>(cardSprite);
+        if (SceneManager.GetActiveScene().name == "OneStage" || SceneManager.GetActiveScene().name == "TwoStage" || SceneManager.GetActiveScene().name == "ThreeStage" || SceneManager.GetActiveScene().name == "FourStage" || SceneManager.GetActiveScene().name == "FiveStage")
+        {
+            cardDescriptionTxt.transform.position = Camera.main.WorldToScreenPoint(transform.position + new Vector3(0.6f, -0.5f, 0f));
+        }
+        else
+        {
+            cardDescriptionTxt.transform.position = Camera.main.WorldToScreenPoint(transform.position + new Vector3(0.3f, -0.9f, 0f));
+        }
+        cardImage.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(cardSprite);
        
         /*cardNametxt = DeckManager.Instance.deckList[1].cardName;
         cardDmg = DeckManager.Instance.deckList[1].cardDamage;
@@ -82,6 +102,9 @@ public class Cards : MonoBehaviour
             case 8:
                 TowerCard = TowerCards.archer;
                 break;
+            case 9:
+                TowerCard = TowerCards.holyKnight;
+                break;
             default:
                 TowerCard = TowerCards.none;
                 break;
@@ -120,6 +143,7 @@ public class Cards : MonoBehaviour
                 break;
             case TowerCards.knight:
                 cardNametxt = "기사";
+                chName = "Player";
                 cardInfo = "세상 평범한 기사입니다. 적을 단일 공격합니다.";
                 cardSprite = "Img/Ch/Player/Knight";
                 animPath = "Animations/Control/MainCharacter";
@@ -127,6 +151,17 @@ public class Cards : MonoBehaviour
                 fireRange = new Vector3(2,2,2);
                 fireTime = 2;
                 cardDmg = 10;
+                break;
+            case TowerCards.holyKnight:
+                cardNametxt = "성기사";
+                chName = "GoldKnight";
+                cardInfo = "기사보다 강한 기사입니다. 적을 단일 공격합니다.";
+                cardSprite = "Img/Ch/Player/holyknight";
+                animPath = "Animations/Control/MainCharacter";
+                maxHp = 100;
+                fireRange = new Vector3(2, 2, 2);
+                fireTime = 2;
+                cardDmg = 50;
                 break;
             case TowerCards.wizzard:
                 cardNametxt = "마법사";

@@ -52,7 +52,7 @@ public abstract class Player : MonoBehaviour
     public string playerName;
 
     
-
+     
     private void Start()
     {
         HP = MaxHp;

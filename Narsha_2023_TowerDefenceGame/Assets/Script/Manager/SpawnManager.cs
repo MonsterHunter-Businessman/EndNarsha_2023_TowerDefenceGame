@@ -33,7 +33,7 @@ public class SpawnManager : Stage
 
     private void Awake()
     {
-        nowStage = SceneManager.GetActiveScene().buildIndex - 3;
+        nowStage = SceneManager.GetActiveScene().buildIndex - 4;
 
         if (nowStage == 0) {
             monsterNum = 23;

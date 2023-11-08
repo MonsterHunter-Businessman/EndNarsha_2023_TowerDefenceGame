@@ -12,6 +12,10 @@ public class GameManager : MonoBehaviour
 
     public GameObject Lose;
 
+    public GameObject Setting;
+
+    private bool isPop;
+
     public static GameManager instance;
 
     private void Awake()
@@ -24,16 +28,28 @@ public class GameManager : MonoBehaviour
         {
             Destroy(this);
         }
+
+        isPop = false;
     }
 
     private void Update()
     {
         towerHpText.text = "타워 체력 : " + towerHp;
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            isPop = !isPop;
+            Setting.SetActive(isPop);           
+        }
+
         if (towerHp <= 0)
         {
             Lose.SetActive(true);
             Time.timeScale = 0f;
+        }
+        else
+        {
+            Time.timeScale = 1f;
         }
     }
 }

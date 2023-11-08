@@ -59,6 +59,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!82 &263930016424682483
 AudioSource:
   m_ObjectHideFlags: 0
@@ -167,6 +168,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa83b56844dc6b44ea70d93cca5dc260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  attack: {fileID: 0}
   run: {fileID: 263930016424682483}
 --- !u!1001 &263930017002970582
 PrefabInstance:
@@ -229,23 +232,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1121400436552774755, guid: 29f32e59fe103f242889d10ad6323b56, type: 3}
       propertyPath: m_SortingOrder
-      value: -1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1497736125007250814, guid: 29f32e59fe103f242889d10ad6323b56, type: 3}
       propertyPath: m_Bounds.m_Center.x
-      value: -0.00036144257
+      value: -0.00036501884
       objectReference: {fileID: 0}
     - target: {fileID: 1497736125007250814, guid: 29f32e59fe103f242889d10ad6323b56, type: 3}
       propertyPath: m_Bounds.m_Center.y
-      value: 0.0045204163
+      value: 0.0045182705
       objectReference: {fileID: 0}
     - target: {fileID: 1497736125007250814, guid: 29f32e59fe103f242889d10ad6323b56, type: 3}
       propertyPath: m_Bounds.m_Extent.x
-      value: 2.7845557
+      value: 2.7845554
       objectReference: {fileID: 0}
     - target: {fileID: 1497736125007250814, guid: 29f32e59fe103f242889d10ad6323b56, type: 3}
       propertyPath: m_Bounds.m_Extent.y
-      value: 3.3204803
+      value: 3.320482
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 4843985084834002234, guid: 29f32e59fe103f242889d10ad6323b56, type: 3}
@@ -381,19 +384,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3587366304939374319, guid: ac0d5bb82e501074790ade88364309d1, type: 3}
       propertyPath: m_Bounds.m_Center.x
-      value: 0.00001001358
+      value: 0.0000104904175
       objectReference: {fileID: 0}
     - target: {fileID: -3587366304939374319, guid: ac0d5bb82e501074790ade88364309d1, type: 3}
       propertyPath: m_Bounds.m_Center.y
-      value: 0.010139704
+      value: 0.01014781
       objectReference: {fileID: 0}
     - target: {fileID: -3587366304939374319, guid: ac0d5bb82e501074790ade88364309d1, type: 3}
       propertyPath: m_Bounds.m_Extent.x
-      value: 2.52999
+      value: 2.5299902
       objectReference: {fileID: 0}
     - target: {fileID: -3587366304939374319, guid: ac0d5bb82e501074790ade88364309d1, type: 3}
       propertyPath: m_Bounds.m_Extent.y
-      value: 3.4498594
+      value: 3.4498596
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 4843985084834002234, guid: ac0d5bb82e501074790ade88364309d1, type: 3}
@@ -459,11 +462,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7386059133816313640, guid: af61890de2ed6a744a8ee3bf3bbc8d27, type: 3}
       propertyPath: m_Bounds.m_Center.x
-      value: -0.0023665428
+      value: -0.0023658276
       objectReference: {fileID: 0}
     - target: {fileID: -7386059133816313640, guid: af61890de2ed6a744a8ee3bf3bbc8d27, type: 3}
       propertyPath: m_Bounds.m_Center.y
-      value: 0.07644248
+      value: 0.07644725
       objectReference: {fileID: 0}
     - target: {fileID: -7386059133816313640, guid: af61890de2ed6a744a8ee3bf3bbc8d27, type: 3}
       propertyPath: m_Bounds.m_Extent.x
@@ -471,7 +474,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7386059133816313640, guid: af61890de2ed6a744a8ee3bf3bbc8d27, type: 3}
       propertyPath: m_Bounds.m_Extent.y
-      value: 3.513961
+      value: 3.5139604
       objectReference: {fileID: 0}
     - target: {fileID: -4057857040744413417, guid: af61890de2ed6a744a8ee3bf3bbc8d27, type: 3}
       propertyPath: m_Name
@@ -496,6 +499,10 @@ PrefabInstance:
     - target: {fileID: 311580695235782034, guid: af61890de2ed6a744a8ee3bf3bbc8d27, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -428.677
+      objectReference: {fileID: 0}
+    - target: {fileID: 4085113989017697087, guid: af61890de2ed6a744a8ee3bf3bbc8d27, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 4843985084834002234, guid: af61890de2ed6a744a8ee3bf3bbc8d27, type: 3}

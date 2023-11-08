@@ -35,6 +35,7 @@ public class DeckManager : MonoBehaviour
     {
         deckList = new Deck[5];
         cardList = new Cards[5];
+        userCardList = new Player[5];
 
         Deck[] decks = new Deck[5];
         for (int i = 0; i < 5; i++)
@@ -45,7 +46,7 @@ public class DeckManager : MonoBehaviour
 
     private void Update()
     {
-        if (SceneManager.GetActiveScene().name == "Ingame")
+        if (SceneManager.GetActiveScene().name == "OneStage" || SceneManager.GetActiveScene().name == "TwoStage" || SceneManager.GetActiveScene().name == "ThreeStage" || SceneManager.GetActiveScene().name == "FourStage" || SceneManager.GetActiveScene().name == "FiveStage")
         {
             LoadCardInfo();
         }
@@ -53,14 +54,18 @@ public class DeckManager : MonoBehaviour
 
     public void LoadCardInfo()
     {
-
+      
         cardObj = GameObject.FindWithTag("cardObj");
         card = FindAnyObjectByType<Card>();
         cards = FindAnyObjectByType<Cards>();
+        Debug.Log(deckList.Length);
         for (int i = 0; i < deckList.Length; i++)
         {
+            Debug.Log("ÇöÀç ÀÎµ¦½º: " + i);
             if (deckList[i] == null)
             {
+                userCardList[i] = null;
+                userCardList[i] = cardObj.transform.GetChild(i).GetComponent<Knight>();
                 cardList[i] = null;
                 cardList[i] = cardObj.transform.GetChild(i).GetComponent<Cards>();
                 deckList[i] = null;
@@ -81,10 +86,10 @@ public class DeckManager : MonoBehaviour
             cardList[i].cardInfo = deckList[i].cardDescription;
             cardList[i].cardSprite = deckList[i].cardSprite;
 
-            userCardList[i].Deamge = deckList[i].cardDamage;
+/*            userCardList[i].Deamge = deckList[i].cardDamage;
             userCardList[i].FireTime = deckList[i].fireTime;
             userCardList[i].MaxHp = deckList[i].cardHp;
-            userCardList[i].FireRange = deckList[i].fireRange;
+            userCardList[i].FireRange = deckList[i].fireRange;*/
         }
     }
 

@@ -14,6 +14,7 @@ public enum Btntype
     ReStart,
     Main,
     NextStage
+
 }
 
 public class BtnManager : MonoBehaviour
@@ -56,18 +57,22 @@ public class BtnManager : MonoBehaviour
         {
             case Btntype.Start:
                 SceneLoad.LoadScene("ReadyScene");
+                Time.timeScale = 1f;
                 break;
 
             case Btntype.Quit:
                 Application.Quit();
+                Time.timeScale = 1f;
                 break;
 
             case Btntype.accept:
-                SceneLoad.LoadScene("Ingame");
+                SceneLoad.LoadScene("OneStage");
+                Time.timeScale = 1f;
                 break;
 
             case Btntype.SaveInfo:
                 GameDataManager.Instance.PlayerInfoSave();
+                Time.timeScale = 1f;
                 break;
 
             case Btntype.ReStart:
@@ -80,6 +85,7 @@ public class BtnManager : MonoBehaviour
                 Time.timeScale = 1f;
                 break;
             case Btntype.NextStage:
+                Time.timeScale = 1f;
                 if (SceneManager.GetActiveScene().buildIndex + 1 < SceneManager.sceneCountInBuildSettings) {
                     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 } else

@@ -17,7 +17,6 @@ public class Card : MonoBehaviour
     private float maxHp;
     private float fireTime;
     private Vector2 fireRange;
-    private Vector2 noneDrag;
 
 
     public List<GameObject> cardObject;
@@ -66,13 +65,8 @@ public class Card : MonoBehaviour
         cardInfo = GetComponent<Cards>();
     }
 
-    private void Start()
-    {
-        noneDrag = this.transform.position;
-    }
 
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("OnCollisionEnter2D");
         Card card = collision.gameObject.GetComponent<Card>();
@@ -99,15 +93,6 @@ public class Card : MonoBehaviour
             childIndex = collision.gameObject.transform.GetSiblingIndex();
             DeckManager.Instance.deckList[childIndex] = slotDeck;
             DeckManager.Instance.SaveCardData(slotDeck, childIndex);
-        }
-        else
-        {
-            gameObject.transform.position = noneDrag;
-        }
-
-        if (collision.gameObject.CompareTag("DropArea"))
-        {
-            cardObject[childIndex].SetActive(false);
         }
     }
 }
