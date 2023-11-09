@@ -23,8 +23,8 @@ public class Stage : MonoBehaviour
             new List<Vector3> { new Vector3 (2, 2, 0), new Vector3 (2, 1, 0), new Vector3 (-1, 1, 0), new Vector3 (-1, -2, 0), new Vector3 (1, -2, 0)},
             new List<Vector3> { new Vector3 (3, 0, 0), new Vector3 (3, -2, 0), new Vector3 (1, -2, 0)}},
         new List<List<Vector3>> {
-            new List<Vector3> { new Vector3 (4, 2, 0), new Vector3 (4, -3, 0), new Vector3 (1, -3, 0), new Vector3 (13, 1, 0), new Vector3 (15, 1, 0)},
-            new List<Vector3> { new Vector3 (4, 2, 0), new Vector3 (4, -3, 0), new Vector3 (1, -3, 0), new Vector3 (13, -1, 0), new Vector3 (15, -1, 0)},
+            new List<Vector3> { new Vector3 (4, 2, 0), new Vector3 (4, -3, 0), new Vector3 (1, -3, 0), new Vector3 (1, -1, 0), new Vector3 (-2, -1, 0)},
+            new List<Vector3> { new Vector3 (4, 2, 0), new Vector3 (4, -3, 0), new Vector3 (1, -3, 0), new Vector3 (1, -1, 0), new Vector3 (-2, -1, 0)},
             new List<Vector3> { new Vector3 (1, 2, 0),  new Vector3 (1, 1, 0), new Vector3 (-1, 1, 0)},
             
             new List<Vector3> { new Vector3 (4, 0, 0), new Vector3 (4, 2, 0), new Vector3 (1, 2, 0), new Vector3 (1, -1, 0), new Vector3 (-1, -1, 0)},

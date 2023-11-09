@@ -57,35 +57,43 @@ public class BtnManager : MonoBehaviour
         {
             case Btntype.Start:
                 Time.timeScale = 1f;
+                GameManager.instance.isEnd = true;
                 SceneLoad.LoadScene("ReadyScene");
                 break;
 
             case Btntype.Quit:
                 Time.timeScale = 1f;
+                GameManager.instance.isEnd = true;
                 Application.Quit();
                 break;
 
             case Btntype.accept:
                 Time.timeScale = 1f;
+                GameManager.instance.isEnd = true;
                 SceneLoad.LoadScene("OneStage");
                 break;
 
             case Btntype.SaveInfo:
                 Time.timeScale = 1f;
+                GameManager.instance.isEnd = true;
                 GameDataManager.Instance.PlayerInfoSave();
                 break;
 
             case Btntype.ReStart:
                 Time.timeScale = 1f;
+                GameManager.instance.isEnd = true;
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                 break;
 
             case Btntype.Main:
                 Time.timeScale = 1f;
+                GameManager.instance.isEnd = true;;
                 SceneLoad.LoadScene("MainMenu");
                 break;
+            
             case Btntype.NextStage:
                 Time.timeScale = 1f;
+                GameManager.instance.isEnd = true;
                 if (SceneManager.GetActiveScene().buildIndex + 1 < SceneManager.sceneCountInBuildSettings) {
                     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 } else
