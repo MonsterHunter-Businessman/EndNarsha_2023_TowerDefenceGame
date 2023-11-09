@@ -56,33 +56,33 @@ public class BtnManager : MonoBehaviour
         switch (Currenttype)
         {
             case Btntype.Start:
-                SceneLoad.LoadScene("ReadyScene");
                 Time.timeScale = 1f;
+                SceneLoad.LoadScene("ReadyScene");
                 break;
 
             case Btntype.Quit:
-                Application.Quit();
                 Time.timeScale = 1f;
+                Application.Quit();
                 break;
 
             case Btntype.accept:
-                SceneLoad.LoadScene("OneStage");
                 Time.timeScale = 1f;
+                SceneLoad.LoadScene("OneStage");
                 break;
 
             case Btntype.SaveInfo:
-                GameDataManager.Instance.PlayerInfoSave();
                 Time.timeScale = 1f;
+                GameDataManager.Instance.PlayerInfoSave();
                 break;
 
             case Btntype.ReStart:
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                 Time.timeScale = 1f;
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                 break;
 
             case Btntype.Main:
-                SceneLoad.LoadScene("MainMenu");
                 Time.timeScale = 1f;
+                SceneLoad.LoadScene("MainMenu");
                 break;
             case Btntype.NextStage:
                 Time.timeScale = 1f;

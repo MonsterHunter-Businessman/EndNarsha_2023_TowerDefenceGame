@@ -47,9 +47,5 @@ public class GameManager : MonoBehaviour
             Lose.SetActive(true);
             Time.timeScale = 0f;
         }
-        else
-        {
-            Time.timeScale = 1f;
-        }
     }
 }

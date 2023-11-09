@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd79b589-6b7e-44c5-973b-a1af59b1b3fb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Manager/BtnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Manager/BtnManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Manager/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +132,7 @@
       <workItem from="1699368785424" duration="1143000" />
       <workItem from="1699370410708" duration="659000" />
       <workItem from="1699446948031" duration="252000" />
-      <workItem from="1699491069205" duration="1410000" />
+      <workItem from="1699491069205" duration="2048000" />
     </task>
     <servers />
   </component>
