@@ -3,5 +3,6 @@
   <component name="Encoding" addBOMForNewFiles="with BOM under Windows, with no BOM otherwise">
     <file url="file://$PROJECT_DIR$/Assets/Script/Deck/Card.cs" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/Assets/Script/Deck/Cards.cs" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/Assets/Script/Manager/DeckManager.cs" charset="x-windows-949" />
   </component>
 </project>
