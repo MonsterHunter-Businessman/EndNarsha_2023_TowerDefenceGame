@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd79b589-6b7e-44c5-973b-a1af59b1b3fb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Json/UserData.Json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Json/UserData.Json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FourStage.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FourStage.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/OneStage.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/OneStage.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ThreeStage.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ThreeStage.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TwoStage.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TwoStage.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +50,14 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/OneDrive/바탕 화면/나르샤\Narsha_2023_TowerDefenceGame.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\abc01\OneDrive\바탕 화면\나르샤" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.29f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Unity\sex\Narsha_2023_TowerDefenceGame\Narsha_2023_TowerDefenceGame\Narsha_2023_TowerDefenceGame -debugCodeOptimization" />
@@ -128,7 +129,7 @@
       <workItem from="1699368785424" duration="1143000" />
       <workItem from="1699370410708" duration="659000" />
       <workItem from="1699446948031" duration="252000" />
-      <workItem from="1699491069205" duration="816000" />
+      <workItem from="1699491069205" duration="1410000" />
     </task>
     <servers />
   </component>
