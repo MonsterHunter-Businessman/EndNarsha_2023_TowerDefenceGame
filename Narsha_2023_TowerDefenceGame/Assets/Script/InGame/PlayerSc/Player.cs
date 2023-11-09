@@ -175,7 +175,7 @@ public abstract class Player : MonoBehaviour
 
     public void OnTriggerEnter2D (Collider2D other) 
     {
-        if (other.CompareTag("DropArea")) {
+        if (other.CompareTag("DropArea") && !other.CompareTag("Player")) {
             attacktrue = true;
             targetPostion = other.transform.position;
         } else {
