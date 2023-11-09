@@ -5,21 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd79b589-6b7e-44c5-973b-a1af59b1b3fb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-firstpass.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-firstpass.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Animations/anim/GKattack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Animations/anim/GKattack.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Monster/MonsterGK.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/Monster/MonsterGK.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Player/GoldKnight.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/Player/GoldKnight.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FiveStage.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FiveStage.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Json/UserData.Json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Json/UserData.Json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/FourStage.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FourStage.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/OneStage.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/OneStage.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/ThreeStage.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ThreeStage.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TwoStage.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TwoStage.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Narsha_2023_TowerDefenceGame.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Narsha_2023_TowerDefenceGame.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-firstpass.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-firstpass.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,6 +128,7 @@
       <workItem from="1699368785424" duration="1143000" />
       <workItem from="1699370410708" duration="659000" />
       <workItem from="1699446948031" duration="252000" />
+      <workItem from="1699491069205" duration="816000" />
     </task>
     <servers />
   </component>
