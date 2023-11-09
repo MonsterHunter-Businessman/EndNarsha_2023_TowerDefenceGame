@@ -14,8 +14,6 @@ public class GameManager : MonoBehaviour
 
     public GameObject Setting;
 
-    public bool isEnd;
-
     private bool isPop;
 
     public static GameManager instance;
@@ -32,7 +30,6 @@ public class GameManager : MonoBehaviour
         }
 
         isPop = false;
-        isEnd = true;
     }
 
     private void Update()
@@ -45,15 +42,10 @@ public class GameManager : MonoBehaviour
             Setting.SetActive(isPop);
         }
 
-        if (towerHp <= 0 && isEnd)
+        if (towerHp <= 0)
         {
-            isEnd = false;
+            towerHpText.text = "타워 체력 : " + 0;  
             Lose.SetActive(true);
-            Time.timeScale = 0f;
-        }
-        else
-        {
-            Time.timeScale = 1f;
         }
     }
 }

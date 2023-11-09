@@ -58,10 +58,8 @@ public class DeckManager : MonoBehaviour
         cardObj = GameObject.FindWithTag("cardObj");
         card = FindAnyObjectByType<Card>();
         cards = FindAnyObjectByType<Cards>();
-        Debug.Log(deckList.Length);
         for (int i = 0; i < deckList.Length; i++)
         {
-            Debug.Log("ÇöÀç ÀÎµ¦½º: " + i);
             if (deckList[i] == null)
             {
                 userCardList[i] = null;
