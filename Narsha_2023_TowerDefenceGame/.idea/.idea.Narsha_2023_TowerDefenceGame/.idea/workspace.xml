@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd79b589-6b7e-44c5-973b-a1af59b1b3fb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Script/InGame/PlayerSc/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/InGame/PlayerSc/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Narsha_2023_TowerDefenceGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Narsha_2023_TowerDefenceGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FiveStage.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FiveStage.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/OneStage.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/OneStage.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Manager/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/Maplestory Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/Maplestory Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +135,7 @@
       <workItem from="1699370410708" duration="659000" />
       <workItem from="1699446948031" duration="252000" />
       <workItem from="1699491069205" duration="2642000" />
-      <workItem from="1699496842254" duration="1879000" />
+      <workItem from="1699496842254" duration="2890000" />
     </task>
     <servers />
   </component>

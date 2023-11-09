@@ -39,10 +39,10 @@ public class GameManager : MonoBehaviour
     {
         towerHpText.text = "타워 체력 : " + towerHp;
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             isPop = !isPop;
-            Setting.SetActive(isPop);           
+            Setting.SetActive(isPop);
         }
 
         if (towerHp <= 0 && isEnd)

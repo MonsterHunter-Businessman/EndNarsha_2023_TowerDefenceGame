@@ -25992,6 +25992,7 @@ MonoBehaviour:
   towerHpText: {fileID: 2016530076}
   Lose: {fileID: 164901667}
   Setting: {fileID: 2057583174}
+  isEnd: 0
 --- !u!1 &1875794206
 GameObject:
   m_ObjectHideFlags: 0
